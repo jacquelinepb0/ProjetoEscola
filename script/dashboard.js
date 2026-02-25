@@ -1,3 +1,6 @@
+let carrossel = document.getElementById("carrossel");
+let listanavbar = document.getElementById('lista-navbar')
+
 let cursosPlus = [
   {
     id: 1,
@@ -41,7 +44,7 @@ let cursosPlus = [
   },
 ];
 
-let carrossel = document.getElementById("carrossel");
+
 
 for (let i = 0; i < cursosPlus.length; i++) {
   carrossel.innerHTML += `
@@ -64,3 +67,34 @@ for (let i = 0; i < cursosPlus.length; i++) {
   </div>
   `;
 }
+
+
+let navegacao = [
+  {
+    nome:"Quem Somos"
+  },
+  {
+    nome:"Nossos Cursos"
+    submenu:["Formações", "Curta e Média Duração", "Intensivos", "Formação Avançada"]
+  },
+  {
+    nome:"Pós Graduação"
+    submenu:["MBA em Negócios", "MBA em tecnologia"]
+  },
+]
+
+
+navegacao.map((item)=> (
+  listanavbar.innerHTML += '
+            <li>
+              <details>
+                <summary>Parent</summary>
+                <ul class="p-2 bg-black w-40 z-1">
+                  <li><a>Submenu 1</a></li>
+                  <li><a>Submenu 2</a></li>
+                </ul>
+              </details>
+            </li>
+            <li><a>Item 3</a></li>
+                 '
+))
