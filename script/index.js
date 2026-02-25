@@ -1,19 +1,23 @@
 let usuarios = [{
+    id:1,
     nome:"Jacqueline",
     email:"jac.pb14@gmail.com"
     senha:"1234"
 },
-usuarios = {
+{
+    id:2,
     nome:"Lais",
     email:"lais@gmail.com"
     senha:"4567"
 },
-usuarios = {
+{
+    id:3,
     nome:"Julia",
     email:"julia@gmail.com"
     senha:"89710"
 },
-usuarios = {
+{
+    id:4,
     nome:"Carol",
     email:"carol@gmail.com"
     senha:"123"
